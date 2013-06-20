@@ -191,7 +191,7 @@ img {
 	font-weight: bold;
 	text-transform: uppercase;
 #	color: #636363;
-	color:#96bc58;
+	color:#D32D36;
 }
 
 /* Shared Post Format styling */
@@ -495,7 +495,7 @@ body.custom-font-enabled {
 a {
 	outline: none;
 #	color: #21759b;
-	color:#96bc58;
+	color:#D32D36;
 }
 a:hover {
 	color: #0f3647;
@@ -514,7 +514,7 @@ a:hover {
 	border: 2px solid #333;
 	border-radius: 3px;
 	clip: auto !important;
-	color: #000;
+	#color: #000;
 	display: block;
 	font-size: 12px;
 	padding: 12px;
@@ -545,9 +545,9 @@ a:hover {
 	height:170px;
 	#padding: 1.714285714rem 0;
 	#border:1px solid black;
-	background:url("images/header_3.png") no-repeat;
+	background:url("images/header_4.png") no-repeat;
 	#background:url("images/green.png") repeat-x scroll 0 0 #c3e094;
-	background-color:#96bc58;
+	#background-color:#96bc58;
 }
 .site-header h1,
 .site-header h2 {
@@ -584,11 +584,20 @@ a:hover {
 
 /* Navigation Menu */
 .main-navigation {
-	margin-top: 0px;
+	margin-top: 2px;
 	#	margin-top: 1.714285714rem;
 	text-align: center;
 	padding:0 24px 0 24px;
 	#border:1px solid black;
+	#background-image:url(images/
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #D32D36, #EF7C6B);
+	background-image: -ms-linear-gradient(top, #D32D36, #EF7C6B);
+	background-image: -webkit-linear-gradient(top, #D32D36, #EF7C6B);
+	background-image: -o-linear-gradient(top, #D32D36, #EF7C6B);
+	background-image: linear-gradient(top, #D32D36, #EF7C6B);
+	#border-radius: 3px;
+	#border: 1px solid #007cbd;
 }
 .main-navigation li {
 	margin-top: 24px;
@@ -598,7 +607,7 @@ a:hover {
 	line-height: 1.42857143;
 }
 .main-navigation a {
-	color: #5e5e5e;
+	#color: #5e5e5e;
 }
 .main-navigation a:hover {
 	color: #21759b;
@@ -1468,8 +1477,8 @@ img#wpstats {
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-		border-bottom: 1px solid #ededed;
-		border-top: 1px solid #ededed;
+		#border-bottom: 1px solid #ededed;
+		#border-top: 1px solid #ededed;
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
@@ -1485,7 +1494,8 @@ img#wpstats {
 	}
 	.main-navigation li a {
 		border-bottom: 0;
-		color: #6a6a6a;
+		#color: #6a6a6a;
+		color:white;
 		line-height: 3.692307692;
 		text-transform: uppercase;
 		white-space: nowrap;
@@ -1535,7 +1545,8 @@ img#wpstats {
 	.main-navigation .current-menu-ancestor > a,
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
-		color: #636363;
+		#color: #636363;
+		color:white;
 		font-weight: bold;
 	}
 	.menu-toggle {
