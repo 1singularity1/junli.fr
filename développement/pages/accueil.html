@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <title>Test pour max</title>
 </head>
 <body>
 <div id=main>
-	<header class="header">
+	<header class="site-header">
 		<div id="logo"></div>
+			<h1 class="site-title">
+				<a href="">Massage bien-être et détoxination à LILLE</a>
+			</h1>
 		<div id="menu">
 			<ul>
-				<li class="menu_item">item1</li>
-				<li class="menu_item">item2</li>
-				<li class="menu_item">item3</li>
+				<li class="menu_item_selected"><a href="">Bienvenue</a></li>
+				<li class="menu_item"><a href="">Qui suis-je?</a></li>
+				<li class="menu_item"><a href="">Tarif des soins</a></li>
+				<li class="menu_item"><a href="">Votre avis</a></li>
+				<li class="menu_item"><a href="">Mon blog</a></li>
+				<li class="menu_item"><a href="">Contact</a></li>
 			</ul>
 		</div>
 	</header>
-	<div id=toolbar>
+	<div id=menubar>
+		<div class="menubar_item menubackground1" onclick=""><span class="menutexte1">Massage</span><span class="menutexte2">Tui-Na</span></div>
+		<div class="menubar_item menubackground2" onclick=""><span class="menutexte1">Réfléxologie</span><span class="menutexte2">plantaire</span></div>
+		<div class="menubar_item menubackground3" onclick=""><span class="menutexte1">Irrigation</span><span class="menutexte2">du colon</span></div>
 	</div>
 	<div id=content>
 		<div id=texte>
+			<p>Je vous propose différents soins qui vous apporteront détente, calme et bien-être :
+			<ul>
+				<li>Le massage Tui na , réharmonisation énergétique chinoise,</li>
+				<li>La réfléxologie plantaire,  associée à l'énergétique chinoise,</li>
+				<li>La détoxination intestinale,</li>
+				<li>Des conseils diététiques, basés sur la diététique chinoise.</li>
+			</ul></p>
+			<p>Tous ces soins énergétiques apportent un bien-être et permettent de soulager de nombreuses affections tel que : 
+			nervosité, insomnie, maux de tête, douleurs dorsales et articulaires, perturbations émotionnelles, problèmes digestifs, 
+			syndrome prémenstruel.</p> 
+			<p>Les massages pratiqués ne sont associés à aucune technique de kinésithérapie, aucune technique médicale ou gymnastique 
+			rééducative. Les massages ne remplissent (sur la peau ou les muscles) en aucun cas les fonctions liées aux massages 
+			kinésithérapeutiques (art 1er du décret n° 96-879 du 8 octobre 1996).</p>
 		</div>
 		<div id="illustration"></div>
 	</div>
-	<div id=footer></div>
+	<div id=footer>
+		<div class="adresse">
+			Jun Li, Massage bien-être et détoxination<br>
+			112, rue des coquelicots 59000 LILLE<br>
+			<a href="mailto:info@junli.fr">info@junli.fr</a>
+		</div>
+		<div class="contact">
+			<img class="separateur_footer"  src="../images/pointille_vertical.png"/>
+			Contactez-moi au<br>03 28 14 11 02
+		</div>
+		<div class="liens">
+			<img class="separateur_footer"  src="../images/pointille_vertical.png"/>
+			<a href="">Mentions légales</a><br><a href="">Sites amis</a>
+		</div>
+	</div>
 </div>
 </body>
 </html>

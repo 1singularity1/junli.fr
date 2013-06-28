@@ -1,86 +1,211 @@
 @CHARSET "UTF-8";
 
-body {
-	font-family: 'Quicksand', arial, sans-serif;
-	margin-top: 20px;
-	}
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	margin: 5px 0 5px 0;
+	padding:0;
+	background:url('../images/background.png') top center no-repeat fixed;
+	background-color: #CCCCCC;
+}
 	
+ul{margin:0px;}
+li{margin:0px;}
+
 #main {
-	max-width: 1000px;
-	border : 1px solid black;
-	margin:0 auto 0 auto;
-	padding: 5px 5px 5px 5px;
+	max-width: 999px;
+	#border : 1px solid black;
+	margin:auto;
+	background-color:white;
+	#padding: 5px 5px 5px 5px;
 }	
 
-.header {
+.site-header {
 	position:relative;
+	top:0px;
 	width:auto;
 	height:105px;
-	border : 2px solid black;
-	margin: 0px 5px 5px 0px;
+	#border : 0px solid black;
+	background-color:white;
+	#margin: 0px 5px 5px 0px;
 }
 
 #logo {
 	position:absolute;
-	left:0px;
-	top:0px;
-	width:40px;
-	height:40px;
-	border : 2px solid green;
-	margin-bottom: 5px;
+	left:42px;
+	top:13px;
+	width:79px;
+	height:89px;
+	background:url('../images/logo.png') no-repeat left top;
+	#border : 1px solid green;
+	#margin-bottom: 5px;
+}
+
+.site-title a {
+	position:absolute;
+	top:20px;
+	left:165px;
+	font-weight:400;
+	font-size:36px;
+	color:#883F19;
+	#border : 1px solid green;
+	text-decoration: none;
 }
 
 #menu {
 	position:absolute;
 	bottom:0px;
 	right:0px;
-	height:30px;
-	border : 2px solid blue;
+	height:auto;
+	margin:0 10px 5px 0;
+	
+	#border : 2px solid blue;
 }
 
-ul{margin:2px;}
-li{margin:2px;}
-
-.menu_item {
+.menu_item, .menu_item_selected {
 	display: inline;
-	border : 2px solid red;
+	#border : 1px solid red;
+	padding:4px;
 }
 
-#toolbar {
-	width:auto;
-	height:200px;
-	border : 2px solid black;
-	margin: 0px 5px 5px 0px;
+.menu_item:hover, .menu_item_selected {
+	background-color: #883F19;
+	filter:alpha(opacity=65); 
+	-moz-opacity:0.65; 
+	opacity:0.65;
+}
+
+.menu_item:hover a,.menu_item_selected a {
+	color:white;
+	text-decoration: none;
+}
+
+.menu_item a {
+	text-decoration: none;
+	color:#999999;
+}
+
+#menubar {
+	display:table;
+	width:100%;
+	height:169px;
+	border : 0px solid black;
+	#margin: 0px 5px 5px 0px;
+}
+
+.menubar_item {
+	position:relative;
+	display:table-cell;
+	width:33%;
+	height:auto;
+	#border : 1px solid red;
+	text-align: center;
+}
+
+.menutexte1 {
+	position:absolute;
+	top:80px;
+	left:50px;
+	color:white;
+	font-size:36px;
+	font-weight:300;
+	#border : 1px solid red;
+}
+
+.menutexte2 {
+	position:absolute;
+	top:120px;
+	left:150px;
+	color:white;
+	font-size:36px;
+	font-weight:100;
+}
+
+.menubackground1 {
+	background:url('../images/menu1.png') no-repeat left top;
+}
+
+.menubackground2 {
+	background:url('../images/menu2.png') no-repeat left top;
+}
+
+.menubackground3 {
+	background:url('../images/menu3.png') no-repeat left top;
+}
+
+.menubar_item:hover {
+	cursor: hand;
+	cursor: pointer;
 }
 
 #content {
 	display:table;
 	border-spacing:5px;
 	width:auto;
-	border : 1px solid red;
-	min-height:800px;
+	#border : 1px solid red;
+	min-height:600px;
 	height:auto;
+	padding:20px;
 }
 
 #texte {
 	display:table-cell;
-	width:500px;
-	height:450px;
-	border : 1px solid grey;
-	padding: 5px 5px 5px 5px;
+	width:60%;
+	height:100%;
+	font-size:14px;
+	#border : 1px solid grey;
+	#padding: 5px 5px 5px 5px;
 }
 
 #illustration {
 	display:table-cell;
-	height:auto;
-	width:500px;
-	border : 2px solid green;
+	height:100%;
+	width:40%;
+	#border : 2px solid green;
 }
 
 #footer {
-	width:auto;
-	border : 2px solid red;
+	display:table;
+	width:100%;
+	#border : 2px solid red;
 	height:93px;
-	margin : 5px 0 0 0;
+	background:url('../images/footer.png') no-repeat left top;
+	#margin : 5px 0 0 0;
 }
 
+.adresse {
+	display:table-cell;
+	width:33%;
+	color:white;
+	font-size:14px;
+	font-weight:400;
+	#border : 1px solid red;
+	padding:20px 0 0 30px;
+}
+.separateur_footer {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.contact {
+	display:table-cell;
+	width:33%;
+	color:white;
+	font-size:14px;
+	font-weight:400;
+	#border : 1px solid red;
+	padding:20px 0 0 120px;
+}
+
+.liens {
+	display:table-cell;
+	width:33%;
+	color:white;
+	font-size:14px;
+	font-weight:400;
+	#border : 1px solid red;
+	padding:20px 0 0 0;
+}
+
+.adresse a, .liens a {
+	color:white;
+}
