@@ -14,21 +14,19 @@
 
 get_header(); ?>
 
-	<div class="subtitle">
-		<?php echo get_the_subtitle(); ?>
-	</div>
-	<div class="content-left">
+<!-- 	<div class="subtitle"> -->
+		<!-- ?php echo get_the_subtitle(); ?> -->
+<!-- 	</div> -->
+	<div class="content-texte">
+		<?php
+				if ( has_post_thumbnail() ) {
+				 	the_post_thumbnail(); // si l'article à une miniature
+				} else {
+				 // s'il n'en a pas...
+				}
+			?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', 'page' ); ?>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- #primary -->
-	<div class="content-right">
-		<?php
-			if ( has_post_thumbnail() ) {
-			 	the_post_thumbnail(); // si l'article à une miniature
-			} else {
-			 // s'il n'en a pas...
-			}
-		?>
-	</div>
 <?php get_footer(); ?>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<markers>
+  <marker>
+    <marker_id>2</marker_id>
+    <map_id>1</map_id>
+    <title></title>
+    <address>112, rue des coquelicots 59000 LILLE</address>
+    <desc></desc>
+    <pic></pic>
+    <icon></icon>
+    <linkd></linkd>
+    <lat>50.612054</lat>
+    <lng>3.0402251000000433</lng>
+    <anim></anim>
+    <infoopen></infoopen>
+  </marker>
+</markers>

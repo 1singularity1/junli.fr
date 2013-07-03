@@ -26,23 +26,34 @@ if ( post_password_required() )
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentytwelve' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-			?>
-		</h2>
+		<div class="subtitle">
+			<?php echo get_comments_number();?> internautes ont donné leur avis.
+		</div>
 
-		<?php wp_list_comments(); ?>
+		<div class="navigation">
+		</div>
+ 		
+		<?php $args = array(
+				'walker'            => null,
+				'max_depth'         => '5',
+				'style'             => 'ul',
+				'callback'          => 'junli_comment',
+				'end-callback'      => null,
+				'type'              => 'all',
+				'reply_text'        => 'Répondre',
+				'page'              => null,
+				'per_page'          => 100,
+				'avatar_size'       => 32,
+				'reverse_top_level' => 'true',
+				'reverse_children'  => 'true',
+				'format'            => 'html5', //or html5 @since 3.6
+				'short_ping'        => 'false' // @since 3.6
+		); ?>
 		
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav id="comment-nav-below" class="navigation" role="navigation">
-			<h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'twentytwelve' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentytwelve' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentytwelve' ) ); ?></div>
-		</nav>
-		<?php endif; // check for comment navigation ?>
-
+ 		<div class="commentlist">
+			<?php wp_list_comments($args);?>
+		</div>
+		
 		<?php
 		/* If there are no comments and comments are closed, let's leave a note.
 		 * But we only want the note on posts and pages that had comments in the first place.

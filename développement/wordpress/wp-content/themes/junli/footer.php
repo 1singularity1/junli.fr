@@ -34,6 +34,7 @@
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer 3') ) : ?>
 				<li><a href="<?php echo get_home_url()?>/?page_id=76">Sites amis</a>
 				<?php endif; ?>
+				<li><a href="mailto:dedale.tsubo@gmail.com"><i>Site réalisé par @Dedale</i></a></li>
 			</ul>
 		</div>
 	</div>

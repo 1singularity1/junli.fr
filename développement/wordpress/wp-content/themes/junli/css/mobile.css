@@ -1,0 +1,72 @@
+
+/*---------------------GENERAL----------------------*/
+
+body {
+}
+
+#main {
+    width: 640px;
+}
+
+.site-title a {
+	font-size:0.8em;
+}
+
+.menu-header {
+    font-size:0.8em;
+}
+
+.content-texte table  {
+	width:100%;
+}
+
+.prices img {
+	display:none;
+}
+
+#map-canvas { 
+	width:250px;
+	height:300px;
+}
+
+.menutexte1 {
+	font-size:1em;
+}
+
+.menutexte2 {
+	font-size:1em;
+	left:60px;
+}
+
+#content {
+	padding:10px 20px 10px 20px;
+}
+
+.adresse img {
+	float:left;
+	margin-right:10px;
+}
+
+.cadre {
+	width:270px;
+	height:90px;
+	padding:20px;
+	font-size:0.8em;
+}
+
+#footer-left {
+	font-size:0.7em;
+	padding:20px 0 0 10px;
+}
+
+#footer-middle {
+	font-size:0.7em;	
+	padding:20px 0 0 50px;
+}
+
+#footer-right {
+	font-size:0.7em;
+}
+.separateur_footer {
+	margin: 0 5px 0 0;
+}

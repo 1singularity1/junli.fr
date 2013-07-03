@@ -4,3 +4,14 @@ Deny from all
 <FilesMatch "^akismet\.(css|js)$">
 	Allow from all
 </FilesMatch>
+
+#allow access to any image
+<FilesMatch "^(.+)\.(png|gif)$">
+	Allow from all
+</FilesMatch>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /site/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d

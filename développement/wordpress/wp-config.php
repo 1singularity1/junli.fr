@@ -87,7 +87,7 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 define('WP_CACHE', true); //Added by WP-Cache Manager
-define( 'WPCACHEHOME', ABSPATH.'/wp-content/plugins/wp-super-cache/' );
+define( 'WPCACHEHOME', '/home/delannoy/Documents/projets/junli.fr/développement/wordpress//wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
